@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+
+    <header>
+        <img class="logo_right" src="media/logo.png">
+    </header>
+
+        <body>
+        <div class="interactive_box">
+        <h3 class="interactive_title">GO INTERACTIVE</h3>
+
+            <div class="white_box" id="instruction">
+            <p class="welcome" id="instruction">
+                Welcome to our interactive
+                section. Read more to find
+                out how it work and what
+                can you win! :)
+            </p>
+
+            <p class="subtitle" id="subtitle">We hide 3 barcodes in our Basement. Each of them lead to different game! Find them and scan to be able to play and win some of our prizes. <br>
+
+            Few rules:
+            <br>- You can play each game only one time per 2 weeks
+            <br>- ONE RULE I GUESS
+
+            <br>If you have any other questions ask our bartenders.
+            We hope You will like it.
+            Good luck! </p>
+
+           <img class="some" src="media/next.svg">
+            </div>
+
+
+        </div>
+        <main class="scanner">
+        <video id="preview"></video>
+        <script>
+            let scanner = new Instascan.Scanner(
+                {
+                    video: document.getElementById('preview')
+                }
+            );
+            scanner.addListener('scan', function(content) {
+                alert('Escaneou o conteudo: ' + content);
+                window.open(content, "_blank");
+            });
+            Instascan.Camera.getCameras().then(cameras =>
+            {
+                if(cameras.length > 0){
+                    scanner.start(cameras[0]);
+                } else {
+                    console.error("Não existe câmera no dispositivo!");
+                }
+            });
+        </script>
+
+        </main>
+
+            <footer class="footer_2">
+               <a href="index.html"><img class="some" src="./media/home.svg"></a>
+               <a href="index.html"><img class="some" src="./media/back.svg"></a>
+            </footer>
+    </body>
+
+    <script>
+          $(document).ready(function() {
+
+    $("#instruction").click(function(){
+    $("#subtitle").slideToggle("slow");
+       });
+    });
+    </script>
+
+</html>
