@@ -46,7 +46,7 @@ header{
      margin: auto;
      line-height: 1.5;
      margin-top: 15px;
-    color: black;
+    color: #4A4A4A;
     z-index: 4;
     display: none;
     }
@@ -325,45 +325,111 @@ circle{
     line-height: 1.4;
 }
 
-.popup {
+
+
+.popup2 {
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
 /* The actual popup (appears on top) */
-.popup .popuptext {
-  width: 300px;
-height: 300px;
+.popup2 .popuptext2 {
+  visibility: hidden;
+  width: 160px;
   background-color: #555;
   color: #fff;
   text-align: center;
   border-radius: 6px;
+  padding: 8px 0;
   position: absolute;
   z-index: 1;
-  padding: 80px 20px;
-top: -300px;
-font-size: 20px;
-visibility: hidden;
+  top: -200px;
+  left: 70px;
+  padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
-.popup .show {
+.popup2 .show2 {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s
 }
 
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+.popup3 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+/* The actual popup (appears on top) */
+.popup3 .popuptext3 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: -200px;
+  left: 70px;
+  padding: 20px;
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup3 .show3 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+.margin_h3{
+    margin: 0px 0px 5px 0px;
+}
+
+.popup4 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup4 .popuptext4 {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  top: -180px;
+  left: 70px;
+  padding: 20px;
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup4 .show4 {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+
 
 /* alex code starts here */
 
@@ -395,8 +461,8 @@ visibility: hidden;
 }
 
 .info_box {
-    margin-left: 60px;
-    margin-top: 30px;
+    margin-left: 40px;
+    margin-top: 80px;
 
 }
 
@@ -465,11 +531,7 @@ visibility: hidden;
     height: auto;
 }
 
-.info_box {
-    margin-left: 60px;
-    margin-top: 30px;
 
-}
 
 .bg {
     display: flex;
@@ -661,4 +723,34 @@ visibility: hidden;
 .quiz {
     height: auto;
     margin-bottom: 100px;
+}
+
+#marker {
+background-image: url(media/pin.png);
+ background-size: cover;
+width: 25px;
+height: 25px;
+border-radius: 50%;
+cursor: pointer;
+        }
+
+#map {
+top: 73vw;
+right: 10vw;
+left: 10vw;
+bottom: 40vw;
+width: 80%;
+height: 46%;
+position: absolute;
+        }
+
+
+.adres {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.opening_hours {
+     margin-bottom: 20px;
+    line-height: 1.5;
 }
