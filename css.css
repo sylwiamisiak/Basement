@@ -9,7 +9,6 @@
 
 body{
     background-image: url(media/bg_1.png);
-    background-position: center;
     background-size: cover;
     color: #fff;
     font-family: sans-serif;
@@ -185,7 +184,7 @@ a{
     width: 100%;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
-    bottom: 0;
+
 }
 
 .scanner-cam {
@@ -513,8 +512,7 @@ visibility: hidden;
     color: #4A4A4A;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
-    bottom: 0;
-    position: fixed;
+    position: absolute;
 }
 
 .findus {
@@ -649,4 +647,16 @@ visibility: hidden;
 
 .event_body {
     height: auto;
+}
+
+.footer_event {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: #fff;
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    position: absolute;
 }
