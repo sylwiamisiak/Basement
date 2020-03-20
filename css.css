@@ -638,3 +638,15 @@ visibility: hidden;
 .lose/win {
     font-size: 25px;
 }
+
+.1page {
+    height: 100vh;
+}
+
+.page1 {
+    height: 100vh;
+}
+
+.event_body {
+    height: auto;
+}
