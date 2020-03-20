@@ -1,4 +1,4 @@
-    let btnAA = document.querySelector('#AA');
+let btnAA = document.querySelector('#AA');
     let btnAB = document.querySelector('#AB');
     let btnAC = document.querySelector('#AC');
     btnAA.addEventListener('click', () => btnAA.style.backgroundColor = '#ba2323')
@@ -27,8 +27,12 @@ function correct(){
         correct.style.display = 'block'
     }
 
+function myFunction3() {
+  var popup3 = document.getElementById("myPopup3");
+  popup3.classList.toggle("show3");
+}
 // When the user clicks on <div>, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
+function myFunction4() {
+  var popup4 = document.getElementById("myPopup4");
+  popup4.classList.toggle("show4");
 }
