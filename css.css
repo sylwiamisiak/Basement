@@ -514,6 +514,7 @@ visibility: hidden;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     bottom: 0;
+    position: fixed;
 }
 
 .findus {
