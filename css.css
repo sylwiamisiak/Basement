@@ -112,7 +112,6 @@ text{
 
 .event_box{
     margin: 60px 30px 0px ;
-    height: 100vh;
 }
 
 .border_bottom{
@@ -372,7 +371,7 @@ visibility: hidden;
     background-color: white;
     border-radius: 20px;
     width: 90%;
-    margin: 80px auto 30px auto;
+    margin: 80px auto 100px auto;
     padding: 0px 0px 15px 0px;
     display: flex;
     flex-direction: column;
@@ -511,7 +510,6 @@ visibility: hidden;
     color: #4A4A4A;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
-    position: absolute;
 }
 
 .findus {
@@ -658,4 +656,9 @@ visibility: hidden;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     position: absolute;
+}
+
+.quiz {
+    height: auto;
+    margin-bottom: 100px;
 }
