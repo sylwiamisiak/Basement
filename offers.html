@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Spin the wheel</title>
     <link rel="stylesheet" href="css.css">
+     <meta name="keywords" content="Basement, Bar, Student Bar, Entertainemnt">
+    <meta name="description" content="Spin the wheel and see what prizes we prepared">
+    <meta name="author" content="Sylwia Misiak, Weornika Kijańczyk, Wiktor Wieczorek, Alex Krugeri">
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 </head>
     <header>
@@ -41,9 +44,9 @@
 
         var data = [
                     {"label":"Beer",  "value":1,  "question":"Congratulations you won 1 free beer!"}, // padding
-                    {"label":"Blank",  "value":1,  "question":"You lose, better luck next time!"}, //font-family
+                    {"label":"Blank",  "value":1,  "question":"You lost, better luck next time!"}, //font-family
                     {"label":"Song",  "value":1,  "question":"Congratulations you won 1 song of your choice!"}, //color
-                    {"label":"Blank",  "value":1,  "question":"You lose, better luck next time!"}, //font-weight
+                    {"label":"Blank",  "value":1,  "question":"You lost, better luck next time!"}, //font-weight
                     {"label":"Ticket",  "value":1,  "question":"Congratulations you won 1 cinema ticket"}, //font-size
                     {"label":"Beer",  "value":1,  "question":"Congratulations you won 1 free beer!"}, //background-color
         ];
@@ -188,7 +191,6 @@
                     array[i] = Math.floor(Math.random() * 100000) + 1;
                 }
             }
-
             return array;
         }
 

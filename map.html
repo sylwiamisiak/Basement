@@ -4,8 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Basement Map</title>
     <link rel="stylesheet" href="css.css">
+    <meta name="keywords" content="Basement, Bar, Student Bar, Entertainemnt, Map, Location">
+    <meta name="description" content="Check where to find our bar locatd in Business Academy of Aarhus">
+    <meta name="author" content="Sylwia Misiak, Weornika Kijańczyk, Wiktor Wieczorek, Alex Krugeri">
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
 
@@ -36,7 +39,6 @@
     </footer>
 </body>
 
-
     <script>
         mapboxgl.accessToken = 'pk.eyJ1Ijoid2VyYTI2MTgxIiwiYSI6ImNrN2Rsc3h6cjBhajAzaG53bnU5NDAwaXgifQ.2vZd332BZq2yu_gk3dtqhw';
         var basement = [10.1591342,56.1197609]
@@ -55,8 +57,5 @@
         new mapboxgl.Marker(el)
             .setLngLat(basement)
             .addTo(map);
-
     </script>
-
-
 </html>

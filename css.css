@@ -42,13 +42,14 @@ header{
 .subtitle {
      font-size: 18px;
      width: 100%;
-     text-align: left;
+     text-align: center;
      margin: auto;
      line-height: 1.5;
      margin-top: 15px;
     color: #4A4A4A;
     z-index: 4;
     display: none;
+    padding: 15px;
     }
 
 
@@ -77,8 +78,6 @@ header{
     align-items: center;
     font-size: 20px;
 }
-
-
 
 .some{
     width: 30px;
@@ -429,8 +428,6 @@ display: flex;
   animation: fadeIn 1s
 }
 
-
-
 /* alex code starts here */
 
 .event1_box {
@@ -517,21 +514,15 @@ display: flex;
     text-align: center;
 }
 
-
-
 .event1_link {
     color: white;
 }
-
-
 
 .white_bg {
     z-index: -1;
     width: 100%;
     height: auto;
 }
-
-
 
 .bg {
     display: flex;
@@ -547,7 +538,6 @@ display: flex;
     margin: 0 auto 0 auto;
     width: 250px;
     height: 300px;
-
 }
 
 .event_txt {
@@ -589,15 +579,13 @@ display: flex;
     width: 80px;
 }
 
-.social_media_icons a:visited {
-        color: black;
-    }
-
+a:visited {
+    color: black;
+}
 
 .footer1_container {
     width: 50%;
 }
-
 
 .footer_interactive {
     width: 100%;
@@ -671,6 +659,7 @@ display: flex;
     display: flex;
     flex-direction: row;
     margin-top: 15px;
+    align-items: center;
 }
 
 .arrow {
